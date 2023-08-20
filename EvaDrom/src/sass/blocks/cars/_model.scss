@@ -1,0 +1,78 @@
+.model {
+    &__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 120%;
+        color: #120309;
+        margin-bottom: 40px;
+    }
+    &__item {
+        display: flex;
+        width: 212px;
+        height: 70px;
+        background: #F5F7FA;
+        border-radius: 100px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        .icon {
+            width: 60px;
+            height: 38px;
+        }
+        .text {
+            margin: 0 10px;
+        }
+        .close_btn {
+            width: 15px;
+            height: 15px;
+            position: relative;
+            cursor: pointer;
+            &-one {
+                position: absolute;
+                width: 15px;
+                height: 1px;
+                background: #000;
+                transform: rotate(45deg);
+                top: 8px;
+            }
+            &-two {
+                position: absolute;
+                width: 15px;
+                height: 1px;
+                background: #000;
+                transform: rotate(-45deg);
+                top: 8px;
+            }
+        }
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        .items {
+            .item {
+                margin-bottom: 15px;
+                &__capital {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 120%;
+                    text-align: center;
+                    color: #6A6A6A;
+                    margin-right: 5px;
+                }
+                &__text {
+                    text-decoration: none;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 120%;
+                    color: #6A6A6A;
+                    &:hover {
+                        color: var(--main-color);
+                    }
+                }
+            }
+        }
+    }
+}

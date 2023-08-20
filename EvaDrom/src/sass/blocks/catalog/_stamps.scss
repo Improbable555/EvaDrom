@@ -1,0 +1,72 @@
+.stamps {
+    .block {
+        margin: 30px 0;
+        display: flex;
+        .arrow_right {
+            position: relative;
+            margin: 0 20px;
+            &-top {
+                position: absolute;
+                height: 10px;
+                width: 1.5px;
+                background: #000;
+                transform: rotate(-50deg);
+                top: 4.3px;
+
+            }
+            &-bottom {
+                position: absolute;
+                height: 10px;
+                width: 1.5px;
+                background: #000;
+                transform: rotate(50deg);
+                top: 10px;
+            }
+        }
+        &__link {
+            text-decoration: none;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            text-align: center;
+            color: #6A6A6A;
+            &:hover {
+                color: var(--main-color);
+            }
+        }
+        &__text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            text-align: center;
+            color: #120309;
+        }
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 120%;
+        color: #120309;
+        margin: 0;
+    }
+    &__wrapper {
+        margin: 40px 0 80px 0;
+        display: grid;
+        grid-template-columns: repeat(6, 180px);
+        grid-auto-rows: 162px;
+        gap: 24px;
+        .item {
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &__title {
+                margin-top: 10px;
+            }
+        }
+    }
+}

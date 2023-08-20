@@ -1,0 +1,42 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    --main-color: #1AA34F;
+}
+
+* {
+    font-family: 'Inter', sans-serif;;
+    margin: 0;
+    padding: 0;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+@import 'blocks/main/menu';
+@import 'blocks/main/carousel';
+@import 'blocks/main/cards';
+@import 'blocks/main/selection';
+@import 'blocks/main/construct';
+@import 'blocks/main/catalog';
+@import 'blocks/main/recommend';
+@import 'blocks/main/evatest';
+@import 'blocks/main/mainthing';
+@import 'blocks/main/whyeva';
+@import 'blocks/main/questions';
+@import 'blocks/main/evacard';
+@import 'blocks/main/partners';
+@import 'blocks/main/assistant';
+@import 'blocks/main/footer';
+
+        

@@ -1,0 +1,276 @@
+.basket {
+    margin-bottom: 100px;
+    &__wrapper {
+        display: flex;
+        .left {
+            &__wrapper {
+                width: 854px;
+                display: flex;
+                flex-direction: column;
+                &-nav {
+                    display: grid;
+                    height: 51px;
+                    background: #F5F7FA;
+                    border: 1px solid #E0E0E0;
+                    width: 100%;
+                    height: 51px;
+                    grid-template-columns: 50% 25% 25%;
+                    align-items: center;
+                    .item {
+                        margin-left: 22.5px;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 150%;
+                        color: #120309;
+                    }
+                }
+                &-element {
+                    display: flex;
+                    padding: 20px;
+                    margin-top: -1px;
+                    width: 100%;
+                    min-height: 150px;
+                    border: 1px solid #E0E0E0;
+                    .item {
+                        &__icon {
+                            width: 120px;
+                            height: 85px;
+                        }
+                        &__box {
+                            margin: 0 60px 0 20px;
+                            width: 260px;
+                            .title {
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 120%;
+                                color: #120309;
+                                margin-bottom: 10px;
+                            }
+                            .text {
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 120%;
+                                color: #6A6A6A;
+                            }
+                        }
+                    }
+                    .item_right {
+                        display: flex;
+                        align-items: center;
+                        .btn_minus {
+                            cursor: pointer;
+                            width: 32px;
+                            height: 32px;
+                            background: #FFFFFF;
+                            border: 1px solid #E0E0E0;
+                            border-radius: 8px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-right: 16px;
+                            .stick {
+                                width: 14px;
+                                border-radius: 8px;
+                                border: 1px solid #606060;
+                            }
+                        }
+                        .counter {
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 27px;
+                            color: #120309;
+                        }
+                        .btn_plus {
+                            width: 32px;
+                            height: 32px;
+                            background: #FFFFFF;
+                            border: 1px solid var(--main-color);
+                            border-radius: 8px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-left: 16px;
+                            margin-right: 90px;
+                            .stick {
+                                width: 14px;
+                                border-radius: 8px;
+                                border: 1px solid var(--main-color);
+                            }
+                            .stick_vert {
+                                position: absolute;
+                                transform: rotate(90deg);
+                                width: 14px;
+                                border-radius: 8px;
+                                border: 1px solid var(--main-color);
+                            }
+                        }
+                        .price {
+                            text-align: center;
+                            &__title {
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 18px;
+                                line-height: 120%;
+                                color: var(--main-color);
+                                margin-bottom: 10px;
+                            }
+                            &__remove {
+                                cursor: pointer;
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 120%;
+                                color: #6A6A6A;
+                                transition: all 0.2s;
+                                &:hover {
+                                    color: #120309;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .right {
+            &__wrapper {
+                margin-left: 32px;
+                padding: 30px 24px;
+                width: 314px;
+                height: 300px;
+                background: #F5F7FA;
+                border-radius: 16px;
+                .clue {
+                    display: flex;
+                    align-items: center; 
+                    margin-bottom: 20px;
+                    &__text {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 100%;
+                        color: #6A6A6A;
+                        margin-left: 8px;
+                    }
+                }
+                .form {
+                    display: flex;
+                    margin-bottom: 20px;
+                    .input {
+                        margin-right: 15px;
+                        padding: 13px 16px;
+                        width: 126px;
+                        height: 45px;
+                        background: #FFFFFF;
+                        border: 1px solid #DBDEE3;
+                        border-radius: 2px;
+                        outline: none
+                    }
+                    .btn {
+                        border: none;
+                        width: 124px;
+                        height: 42px;
+                        background: var(--main-color);
+                        border-radius: 8px;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 150%;
+                        align-items: center;
+                        color: #FFFFFF;
+                    }
+                }
+                .stick {
+                    width: 100%;
+                    height: 1px;
+                    background: #E0E0E0;
+                    margin-bottom: 16px;
+                }
+                .line {
+                    margin-bottom: 16px;
+                    display: flex;
+                    justify-content: space-between;
+                    position: relative;
+                    .text {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 120%;
+                        color: #6A6A6A;
+                    }
+                    .price-one {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 120%;
+                        color: #120309;
+                    }
+                    .red-stick {
+                        position: absolute;
+                        right: 0;
+                        top: 8px;
+                        background: #EB5757;
+                        width: 48px;
+                        height: 1px;
+                    }
+                    .price-two {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 120%;
+                        color: #EB5757;
+                    }
+                    .big-text {
+                        font-size: 16px;
+                    }
+                    .price-three {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 120%;
+                        color: #120309;
+                    }
+                }
+                .btn_big {
+                    margin-top: 10px;
+                    border: none;
+                    width: 266px;
+                    height: 54px;
+                    background: var(--main-color);
+                    border-radius: 8px;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 100%;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                }
+                .timer-text {
+                    margin-top: 20px;
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    .timer {
+                        position: absolute;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 120%;
+                        color: var(--main-color);
+                    }
+                    .text {
+                        margin-left: 67px;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 120%;
+                        color: #120309;
+                    }
+                }
+            }
+        }
+    }
+}

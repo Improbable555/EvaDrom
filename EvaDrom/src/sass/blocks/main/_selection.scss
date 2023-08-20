@@ -1,0 +1,55 @@
+.selection {
+    position: relative;
+    margin-bottom: 60px;
+    .wrapper {
+        height: 270px;
+        background: url('../img/rugs_search/rugs_bg.png');
+        &__title {
+            padding-top: 70px;
+            text-align: center;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 120%;
+            color: #FFFFFF;
+            margin: 0;
+        }
+        &__select {
+            margin: 40px 40px 70px 40px;
+            display: flex;
+            justify-content: space-between;
+            .selector {
+                position: relative;
+                padding: 13px 16px;
+                width: 292px;
+                height: 54px;
+                background: #FFFFFF;
+                border: 1px solid #DBDEE3;
+                border-radius: 8px;
+                appearance: none;
+                background-image: url('../icons/arrows/arrow_down.svg');
+                background-repeat: no-repeat;
+                background-position: calc(100% - 10px);
+                outline: none;
+                cursor: pointer;
+            }
+            .btn {
+                border: none;
+                width: 185px;
+                height: 54px;
+                background: #1AA34F;
+                border-radius: 8px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 100%;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                transition: all 0.2s;
+                &:hover {
+                    background: #095f2a;
+                }
+            }
+        }
+    }
+}

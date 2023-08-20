@@ -1,0 +1,128 @@
+.assistant {
+    margin-top: 120px;
+    position: relative;
+    height: 786px;
+    &__bg {
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        height: 786px;
+    }
+    &__wrapper {
+        padding-top: 110px;
+        .item {
+            position: relative;
+            padding: 48px;
+            width: 510px;
+            height: 566px;
+            background: #FFFFFF;
+            box-shadow: 0px 33px 80px rgba(18, 3, 9, 0.03), 0px 13.7866px 33.4221px rgba(18, 3, 9, 0.0215656), 0px 7.37098px 17.869px rgba(18, 3, 9, 0.0178832), 0px 4.13211px 10.0172px rgba(18, 3, 9, 0.015), 0px 2.19453px 5.32008px rgba(18, 3, 9, 0.0121168), 0px 0.913195px 2.21381px rgba(18, 3, 9, 0.00843437);
+            border-radius: 16px;
+            .title {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 31px;
+                line-height: 120%;
+                text-align: center;
+                color: #120309;
+                margin-bottom: 15px;
+            }
+            .subtitle {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                color: #6A6A6A;
+                margin-bottom: 30px;
+            }
+            .form {
+                display: flex;
+                flex-direction: column;
+                .input {
+                    padding: 16px 15px;
+                    height: 48px;
+                    background: #FFFFFF;
+                    border: 1px solid #E1E1E1;
+                    border-radius: 8px;
+                    margin-bottom: 16px;
+                    outline: none
+                }
+                .btn {
+                    margin: 14px 0 24px 0;
+                    width: 414px;
+                    height: 62px;
+                    background: #1AA34F;
+                    border-radius: 8px;
+                    border: none;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 100%;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    &:hover {
+                        background: #095f2a;;
+                    }
+                }
+            }
+            .text {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+                color: #6A6A6A;
+                a {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 150%;
+                    text-decoration-line: underline;
+                    color: #1AA34F;
+                }
+            }
+            .assistant-woman {
+                position: absolute;
+                bottom: -100px;
+                left: 110%;
+            }
+            .assistant-block {
+                position: absolute;
+                width: 310px;
+                height: 116px;
+                background: #FFFFFF;
+                box-shadow: 0px 33px 80px rgba(18, 3, 9, 0.03), 0px 13.7866px 33.4221px rgba(18, 3, 9, 0.0215656), 0px 7.37098px 17.869px rgba(18, 3, 9, 0.0178832), 0px 4.13211px 10.0172px rgba(18, 3, 9, 0.015), 0px 2.19453px 5.32008px rgba(18, 3, 9, 0.0121168), 0px 0.913195px 2.21381px rgba(18, 3, 9, 0.00843437);
+                border-radius: 16px;
+                padding: 24px 26px 24px 16px;
+                top: 140px;
+                right: -160%;
+                .wrapper {
+                    position: relative;
+                    .title {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 100%;
+                        color: #120309;
+                        margin-bottom: 10px;
+                        text-align: center;
+                    }
+                    .subtitle {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 150%;
+                        color: #6A6A6A;
+                        margin-left: 10px;
+                    }
+                    .icon {
+                        width: 12px;
+                        height: 12px;
+                        position: absolute;
+                        right: -6px;
+                        top: -6px;
+                    }
+                }
+            }
+        }
+    }
+}

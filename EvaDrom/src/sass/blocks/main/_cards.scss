@@ -1,0 +1,31 @@
+.cards {
+    margin: 40px 0 120px 0;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        .item {
+            width: 384px;
+            height: 152px;
+            background-color: #F37500;
+            border-radius: 16px;
+            display: flex;
+            padding: 40px 24px;
+            align-items: center;
+            justify-content: center;
+            &__text {
+                margin-left: 16px;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 120%;
+                color: #FFFFFF;
+            }
+        }
+        .blue {
+            background-color: #0099DB;
+        }
+        .green {
+            background: linear-gradient(99.27deg, #04983D 0%, #1BC85E 100%);
+        }
+    }
+}

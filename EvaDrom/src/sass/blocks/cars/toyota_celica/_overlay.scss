@@ -1,0 +1,97 @@
+.overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+.overlay {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    // display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba($color: #000000, $alpha: 0.56);
+    .modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 480px;
+        min-height: 588px;
+        background: #FFFFFF;
+        box-shadow: 0px 33px 80px rgba(18, 3, 9, 0.03), 0px 13.7866px 33.4221px rgba(18, 3, 9, 0.0215656), 0px 7.37098px 17.869px rgba(18, 3, 9, 0.0178832), 0px 4.13211px 10.0172px rgba(18, 3, 9, 0.015), 0px 2.19453px 5.32008px rgba(18, 3, 9, 0.0121168), 0px 0.913195px 2.21381px rgba(18, 3, 9, 0.00843437);
+        border-radius: 16px;
+        padding: 40px;
+        &__title {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 120%;
+            color: #120309;
+            margin-bottom: 30px;
+        }
+        &__close {
+            position: absolute;
+            font-size: 36px;
+            line-height: 16px;
+            right: 24px;
+            top: 24px;
+            cursor: pointer;
+        }
+        .feed-form {
+            .form-text {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                color: #120309;
+                margin-bottom: 6px;
+                .form-star {
+                    color: #EB5757;
+                }
+            }
+            input {
+                padding: 13px 16px;
+                width: 400px;
+                height: 50px;
+                background: #FFFFFF;
+                border: 1px solid #DBDEE3;
+                border-radius: 2px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                display: flex;
+                align-items: center;
+                color: #828282;
+                margin-bottom: 16px;
+                outline: none;
+            }
+            textarea {
+                resize: none;
+                padding: 13px 16px;
+                width: 400px;
+                height: 120px;
+                background: #FFFFFF;
+                border: 1px solid #DBDEE3;
+                border-radius: 2px;
+                margin-bottom: 30px;
+                outline: none;
+            }
+            .btn {
+                border: none;
+                width: 400px;
+                height: 54px;
+                background: var(--main-color);
+                border-radius: 8px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 100%;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+        }
+    }
+}

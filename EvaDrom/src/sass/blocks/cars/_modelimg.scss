@@ -1,0 +1,42 @@
+.modelimg {
+    margin-top: 80px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 282px);
+        grid-auto-rows: 253px;
+        gap: 24px;
+        .item {
+            cursor: pointer;
+            position: relative;
+            border: 1px solid #F2F2F2;
+            border-radius: 16px;
+            .block {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 15px;
+                left: 20px;
+                background: rgba(245, 247, 250, 0.9);
+                border-radius: 4px;
+                width: 54px;
+                height: 22px;
+                &__title {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 120%;
+                    color: #6A6A6A;
+                }
+            }
+            .description {
+                padding: 16px 15px 0 15px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 120%;
+                color: #120309;
+            }
+        }
+    }
+}

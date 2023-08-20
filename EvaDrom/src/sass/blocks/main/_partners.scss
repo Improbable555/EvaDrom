@@ -1,0 +1,23 @@
+.partners {
+    margin-top: 120px;
+    &__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 120%;
+        color: #120309;
+        text-align: center;
+        margin-bottom: 48px;
+    }
+    &__wrapper {
+        overflow: hidden;
+        width: 100%;
+        .items {
+            display: flex;
+            .item {
+                margin: 0 30px;
+            }
+        }
+    }
+    
+}

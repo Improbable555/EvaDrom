@@ -1,0 +1,89 @@
+.whyeva {
+    margin-top: 60px;
+    .title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 120%;
+        color: #120309;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 300px;
+        gap: 24px;
+        .item {
+            position: relative;
+            display: flex;
+            padding: 48px 40px;
+            background: #120309;
+            z-index: -4;
+            border-radius: 16px;
+            overflow: hidden;
+            &__gridient {
+                position: absolute;
+                width: 310px;
+                height: 300px;
+                right: 0;
+                top: 0;
+                z-index: -1;
+            }
+            &__image {
+                position: absolute;
+                width: 310px;
+                height: 300px;
+                right: 0;
+                top: 0;
+                z-index: -2;
+            }
+            .items {
+                .box_2 {
+                    width: 42px;
+                    height: 42px;
+                    position: relative;
+                    &-1{
+                        position: absolute;
+                        left: 4px;
+                        bottom: 4px;
+                    }
+                    &-2{
+                        position: absolute;
+                        right: 4px;
+                        top: 4px;
+                    }
+                    &-3{
+                        position: absolute;
+                        left: 7px;
+                        bottom: 7px;
+                    }
+                    &-4{
+                        position: absolute;
+                        right: 7px;
+                        top: 7px;
+                    }
+                    &-5{
+                        position: absolute;
+                    }
+                    
+                }
+                &__title {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #FFFFFF;
+                    margin: 24px 0 16px 0;
+                }
+                &__subtitle {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 150%;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}

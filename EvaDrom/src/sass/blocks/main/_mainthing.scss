@@ -1,0 +1,78 @@
+.mainthing {
+    margin-top: 120px;
+    padding: 120px 0;
+    .title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 120%;
+        text-align: center;
+        color: #120309;
+        margin-bottom: 40px;
+    }
+    .wrapper {
+        display: flex;
+        &__left {
+            position: relative;
+            height: 514px;
+            .points {
+                position: absolute;
+                z-index: -1;
+                bottom: -54px;
+                left: -44px;
+            }
+            .image__top {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 12px;
+            }
+        }
+        &__right {
+            padding-left: 48px;
+            .text {
+                margin-bottom: 30px;
+                &__p {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 150%;
+                    color: #6A6A6A;
+                }
+            }
+            .stick {
+                width: 100%;
+                height: 1px;
+                background: #E0E0E0;
+                margin: 15px 0 15px 0;
+            }
+            .information {
+                display: flex;
+                justify-content: space-between;
+                .name {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 150%;
+                    color: #120309;
+                }
+                .icon {
+                    width: 12px;
+                    cursor: pointer;
+                }
+            }
+            .hidden_item {
+                display: none;
+                margin-top: 10px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 150%;
+                color: #6A6A6A;
+            }
+            .active {
+                display: block;
+                margin-top: 10px;
+            }
+        }
+    }
+}

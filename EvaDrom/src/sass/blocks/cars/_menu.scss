@@ -1,0 +1,146 @@
+.menu {
+    &__top {
+        .container {
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .location {
+            span {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 100%;
+                color: #120309;
+            }
+        }
+        .searh {
+            .castom-input {
+                position: relative;
+                &:before {
+                    content: '';
+                    cursor: pointer;
+                    position: absolute;
+                    top: 16px;
+                    right: 16px;
+                    width: 20px;
+                    height: 20px;
+                    background: url('../icons/search/search.svg') ;
+                    background-size: cover;
+                }
+            }
+            input {
+                width: 363px;
+                height: 52px;
+                background: #FFFFFF;
+                border: 1px solid #E1E1E1;
+                border-radius: 8px;
+                padding: 16px;
+                outline: none
+            }
+        }
+        .number {
+            width: 155px;
+            &__title {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 100%;
+                color: #8E9AA9;
+            }
+            &__call {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 100%;
+                color: #120309;
+            }
+        }
+        .call {
+            &__button {
+                width: 175px;
+                height: 52px;
+                border: 1px solid var(--main-color);
+                border-radius: 8px;
+                color: var(--main-color);
+                transition: all 0.5s;
+                background: #FFFFFF;
+                background-image: url('../icons/mobile/mobile_icon.svg');
+                background-repeat: no-repeat;
+                background-position: 12px 15px;
+                padding-left: 10px;
+                &:hover {
+                    background-color: var(--main-color);
+                    color: #000;
+                    background-image: url('../icons/mobile/mobile_black.svg');
+                    background-position: 12px 15px;
+                }
+            }
+            &__text {
+                margin-left: 8px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 100%;
+            }
+        }
+    }
+    &__bott {
+        background-color: var(--main-color);
+        .container {
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .btn__catalog {
+            border: none;
+            width: 115px;
+            height: 36px;
+            background: #0C8B3D;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.2s;
+            &:hover {
+                background: #095f2a;
+            }
+            img {
+                margin-top: -2px;
+            }
+            .btn-text {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 100%;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                padding-left: 5px;
+            }
+        }
+        .list {
+            a {
+                text-decoration: none;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 100%;
+                color: #FFFFFF;
+                margin-left: 24px;
+                transition: all 0.3s;
+                &:hover {
+                    color: #000;
+                }
+            } 
+        }
+        .btn__basket {
+            border: none;
+            width: 97px;
+            height: 36px;
+            background: #FFFFFF;
+            border-radius: 8px;
+        }
+    }
+}

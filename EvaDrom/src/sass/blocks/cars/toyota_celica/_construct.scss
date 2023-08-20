@@ -1,0 +1,210 @@
+.construct {
+    margin-top: 30px;
+    &__wrapper {
+        display: flex;
+        .left {
+            margin-right: 30px;
+            &__top {
+                .main_photo {
+                    display: none;
+                    &.active {
+                        display: block;
+                        width: 456px;
+                        height: 356px;
+                        border-radius: 16px;
+                        object-fit: cover;
+                    }
+                }
+            }
+            &__bottom {
+                display: flex;
+                margin-top: 10px;
+                justify-content: space-between;
+                .carousel_photo {
+                    position: relative;
+                    width: 106px;
+                    height: 76px;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    &.active {
+                        // width: 109px;
+                        // height: 79px;
+                        border: 3px solid var(--main-color);
+                    }
+                }
+            }
+            .pointer {
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .point {
+                    margin: 0 6px;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 100%;
+                    background: #E0E0E0;
+                    &.active {
+                        background: var(--main-color);
+                    }
+                }
+            }
+        }
+        .right {
+            &__availability {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+                .availability {
+                    display: flex;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 120%;
+                    color: var(--main-color);
+                    margin-right: 16px;
+                    align-items: center;
+                    .check {
+                        margin-right: 10px;
+                    }
+                }
+                .product_code {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 120%;
+                    color: #6A6A6A;
+                }
+            }
+            &__title {
+                display: flex;
+                align-items: center;
+                .circle_one {
+                    margin-right: 14px;
+                    width: 40px;
+                    height: 40px;
+                    background-color: var(--main-color);
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #FFFFFF;
+                }
+                .text {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 30px;
+                    line-height: 45px;
+                    display: flex;
+                    align-items: center;
+                    color: #120309;
+                    margin: 0;
+                }
+            }
+            &__wrapper {
+                margin-top: 30px;
+                display: flex;
+                .item_left {
+                    margin-right: 20px;
+                }
+                .item {
+                    &__block {
+                        height: 195px;
+                        .title {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 120%;
+                            color: #6A6A6A;
+                            text-align: center;
+                        }
+                        .photo {
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
+                }
+                .rugs {
+                    margin-top: 15px;
+                    &__title {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 120%;
+                        color: #120309;
+                        margin-bottom: 16px;
+                    }
+                    &__color {
+                        display: flex;
+                        flex-wrap: wrap;
+                        width: 342px;
+                        .icon {
+                            margin: 0 10px 10px 0;
+                            cursor: pointer;
+                            .rugs-icon {
+                                &.active {
+                                    width: 40px;
+                                    height: 40px;
+                                    border: 3px solid #1AA34F;
+                                    border-radius: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+                .form {
+                    margin-top: 20px;
+                    &__item {
+                        display: flex;
+                        justify-content: center;
+                        .icons {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            margin-right: 25px;
+                            cursor: pointer;
+                            .active {
+                                width: 80px;
+                                height: 80px;
+                                border: 3px solid #1AA34F;
+                                border-radius: 100%;
+                            }
+                        }
+                    }
+                }
+                .edging {
+                    margin-top: 15px;
+                    &__title {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 120%;
+                        color: #120309;
+                        margin-bottom: 16px;
+                    }
+                    &__color {
+                        display: flex;
+                        flex-wrap: wrap;
+                        width: 342px;
+                        .icon {
+                            margin: 0 10px 10px 0;
+                            cursor: pointer;
+                            .color-icon {
+                                &.active {
+                                    width: 40px;
+                                    height: 40px;
+                                    border: 3px solid #1AA34F;
+                                    border-radius: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

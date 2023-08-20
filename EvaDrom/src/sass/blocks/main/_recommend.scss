@@ -1,0 +1,81 @@
+.recommend {
+    .title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 120%;
+        text-align: center;
+        color: #120309;
+        margin-bottom: 40px;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 261px;
+        gap: 24px;
+        .item {
+            position: relative;
+            display: flex;
+            width: 384px;
+            height: 261px;
+            border-radius: 16px;
+            padding: 40px 24px;
+            overflow: hidden;
+            &__left {
+                position: absolute;
+                z-index: 4;
+                .title {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 150%;
+                    color: #120309;
+                    width: 265px;
+                    height: 60px;
+                    text-align: start;
+                    margin-bottom: 16px;
+                }
+                .wrapper__price {
+                    display: flex;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 150%;
+                    .price__promotion {
+                        color: #120309;
+                        margin-right: 10px;
+                    }
+                    .promotion {
+                        color: var(--main-color);
+                    }
+                    .old {
+                        text-decoration: line-through;
+                    }
+                }
+                .btn {
+                    margin-top: 24px;
+                    border: none;
+                    width: 163px;
+                    height: 54px;
+                    background: #1AA34F;
+                    border-radius: 8px;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 100%;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    &:hover {
+                        background: #095f2a;
+                    }
+                }
+            }
+            &__right {
+                position: absolute;
+                z-index: 2;
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    h1 {
+        margin-top: 40px;
+        font-size: 24px;
+        color: #212529;
+        margin-bottom: 30px;
+        font-weight: 600;
+    }
+    h2 {
+        font-size: 20px;
+        color: #212529;
+        margin-bottom: 24px;
+    }
+    span {
+        display: block;
+        margin-bottom: 16px;
+    }
+    p {
+        padding-left: 40px;
+        margin-top: 24px;
+    }
+    td {
+        border: 1px solid rgb(190, 190, 190);
+        padding: 10px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #eee;
+    }
+
+    table {
+        border-collapse: collapse;
+        border: 2px solid rgb(200, 200, 200);
+        letter-spacing: 1px;
+        font-family: sans-serif;
+        font-size: 0.8rem;
+    }
+}
